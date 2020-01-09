@@ -10,5 +10,5 @@ def matrix_confusao(y, preds):
         True Positive, False Negative
         False Positive, True Negative       
     """
-    tn, fp, fn, tp = conf_mtx = confusion_matrix(y, preds).ravel()
-    return np.array([[tp, fn],[fp, tn]])
+    tn, fp, fn, tp = confusion_matrix(y, preds).ravel()
+    return np.array([[tp, fp],[fn, tn]])
